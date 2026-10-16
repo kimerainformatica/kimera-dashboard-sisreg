@@ -1,0 +1,26 @@
+{
+  "name": "server",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "main": "src/index.js",
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "scripts": {
+    "dev": "node --watch src/index.js",
+    "start": "node src/index.js",
+    "importar": "node src/scripts/importarSisreg.js",
+    "migrar:sqlite": "node src/scripts/migrarSqlite.js",
+    "usuario:criar": "node src/scripts/criarUsuario.js",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "csv-parse": "^7.0.2",
+    "express": "^4.21.1",
+    "multer": "^2.0.1",
+    "mysql2": "^3.24.6"
+  }
+}

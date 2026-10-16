@@ -1,0 +1,19 @@
+{
+  "name": "dashboard-orto",
+  "private": true,
+  "version": "1.0.0",
+  "workspaces": [
+    "server",
+    "client"
+  ],
+  "scripts": {
+    "dev": "concurrently -n SERVER,CLIENT -c blue,green \"npm run dev -w server\" \"npm run dev -w client\"",
+    "build": "npm run build -w client",
+    "start": "npm run start -w server",
+    "importar": "npm run importar -w server --",
+    "test": "npm test -w server"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0"
+  }
+}

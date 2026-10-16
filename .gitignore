@@ -1,0 +1,14 @@
+node_modules/
+server/data/*.db
+server/data/*.db-journal
+server/data/*.db-shm
+server/data/*.db-wal
+client/dist/
+.env
+*.log
+
+# Dados de pacientes (LGPD): nunca versionar
+arquivos SISREG/
+Arquivos SISREG/
+*.csv
+backup/
